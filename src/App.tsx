@@ -7,9 +7,13 @@ function App() {
 
   return (
     <>
-    <div className>Tailwind css setup for React</div>
+    <div className="text-xm">Tailwind css setup for React</div>
     </>
   )
 }
 
 export default App
+
+
+
+// 
