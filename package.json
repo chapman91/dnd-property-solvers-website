@@ -5,14 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tailwindcss build src/styles.css -o public/styles.css",
+    "build": "tailwindcss build ./index.css -o public/styles.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@tailwindcss/forms": "^0.5.7",
-    "daisyui": "^4.12.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -25,6 +24,7 @@
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.10",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
