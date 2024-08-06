@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms'), require('@headlessui/tailwindcss')],
+  plugins: [require('@tailwindcss/forms'), require('@headlessui/tailwindcss'), require('daisyui')],
 }
 
 // `**/*` glob pattern that matches zero or more directories ans subdirectories
