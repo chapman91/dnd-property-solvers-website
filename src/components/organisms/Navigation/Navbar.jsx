@@ -1,12 +1,12 @@
 import React from "react";
-import '../../App.css'
+import '../../../App.css'
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
 <div className="navbar bg-base-100">
   
   <div className="navbar-start">
-    {/* Hamburger menu for small screens  */}
+    {/* Hamburger menu for small screens  and drop down Navbar*/}
     <div className="dropdown md:flex">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
@@ -61,4 +61,6 @@ export const Navbar = () => {
 </div>
 )
 }
+
+export default Navbar;
 

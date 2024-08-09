@@ -1,7 +1,7 @@
 // preview.ts file
 import type { Preview } from "@storybook/react";
 
-// Customization file storybook
+// Configuration files for the stories you write
 const preview: Preview = {
   parameters: {
     controls: {

@@ -1,7 +1,7 @@
 
 
 import './App.css'
-import {Navbar} from "./components/organisms/Navbar";
+import {Navbar} from "./components/organisms/Navigation/Navbar";
 import HeroSection from "./components/organisms/HeroSection";
 
 function App() {
