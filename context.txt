@@ -1,0 +1,90 @@
+# Context.txt - Centralized Text Repository for Website Content
+
+## 1. Hero Section
+----------------------------------------
+**Title**: Instant Cash Offer for Your Home
+**Subtitle**: Sell Fast, No Fees or Commissions. We Buy in Any Condition!
+**Description**: 
+"Sell Fast, No Fees or Commissions. We Buy in Any Condition!"
+
+
+
+
+## 2. About Us Section
+----------------------------------------
+**Title**: About Us
+**Company Mission**: 
+"Our mission is to simplify property management for everyone. With cutting-edge technology and user-centric design, we aim to empower property owners, managers, and tenants alike."
+
+**Company Vision**: 
+"To become the leading platform in the real estate industry, providing innovative solutions that transform the way properties are managed worldwide."
+
+**Our Values**:
+- **Integrity**: We uphold the highest standards in everything we do.
+- **Innovation**: We constantly seek to improve and innovate.
+- **Customer-Centricity**: Our customers' needs are our top priority.
+
+
+
+
+
+## 3. Services Section
+----------------------------------------
+**Title**: SELL YOUR HOME IN THREE SIMPLE STEPS
+**Service 1 - SCHEDULE A CONSULTATION**: 
+"Schedule a free, no-obligation consultation to discuss your property and explore the best options available to you."
+
+**Service 2 - GET A FAIR OFFER**: 
+"Receive a competitive and transparent offer for your property, with no hidden fees or surprises."
+
+
+**Service 3 - GET PAID VIA A TITLE COMPANY**: 
+"Get paid quickly and securely through a trusted title company, ensuring a smooth and hassle-free transaction."
+
+
+
+## 4. Contact Section
+----------------------------------------
+**Title**: Contact Us
+**Phone**: (123) 456-7890
+**Email**: support@dndpropertyresolver.com
+**Address**: 1234 Property Lane, Suite 100, Real Estate City, Country
+**Business Hours**: 
+"Monday - Friday: 9:00 AM - 6:00 PM
+Saturday: 10:00 AM - 4:00 PM
+Sunday: Closed"
+
+
+
+
+
+## 5. Footer Text
+----------------------------------------
+**Copyright Notice**: 
+"© 2024 DND Property Resolver. All rights reserved."
+
+**Privacy Policy**: 
+"Your privacy is important to us. View our [Privacy Policy](#) for more details."
+
+**Terms of Service**: 
+"By using our service, you agree to our [Terms of Service](#)."
+
+
+
+
+## 6. CTA (Call to Action)
+----------------------------------------
+**CTA Button Text**: "Get Started Now"
+**CTA Description**: 
+"Join thousands of satisfied property owners who trust DND Property Resolver for their property management needs. Sign up today and take control of your real estate investments!"
+
+
+
+
+## 7. Miscellaneous
+----------------------------------------
+**Placeholder Text**: "Coming Soon!"
+**Error Message**: "Oops! Something went wrong. Please try again later."
+**404 Page Text**: 
+"Sorry, the page you're looking for doesn't exist. Return to the [homepage](#) or contact us for assistance."
+
