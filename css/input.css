@@ -11,7 +11,11 @@ a {
     @apply text-[20px] bg-first-hover transition-all duration-300; 
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
+    @apply font-primary
+}
+
+h2,h3,h4,h5,h6 {
     @apply font-primary text-second-secondary;
 }
 
@@ -33,4 +37,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn-primary {
     @apply bg-first-primary hover:bg-accent-hover;
+}
+
+.btn-secondary {
+    @apply bg-second-onSecondaryContainer hover:bg-accent-hover;
 }

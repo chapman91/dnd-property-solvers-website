@@ -19,7 +19,6 @@ module.exports = {
     },
     backgroundImage: {
       hero: 'url(/assets/hero/Background.png)',
-      customGradient: 'linear-gradient(to right, #85D08F 17%, #85D08F 31%, #EFD59E 46%)',
     },
     extend: {
       colors: {
@@ -29,19 +28,21 @@ module.exports = {
         onPrimary: '#EFD59E',
         primaryContainer: '#85D08F',
         onPrimaryContainer: '#F9EED8',
+        customGradient: 'linear-gradient(to right, #85D08F 17%, #85D08F 31%, #EFD59E 46%)',
         hover: '#E0E0E0',
       },
         second: {
           secondary: '#0E0E0E',
           onSecondary: '#FEFEFE',
           secondaryContainer: '#CDE1CF',
+          onSecondaryContainer: '#D9D9D9',
         },
       accent: {
         default: '#FF5733',  // Default accent color
         secondary: '#33CFFF', // Secondary accent color
         hover: '#E0E0E0',
       }
-     
+    
       }
     },
   },

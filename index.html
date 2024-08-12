@@ -6,6 +6,7 @@
     <title>DNDPROPERTY</title>
     <!-- CSS -->
     <link rel="stylesheet" href="dist/output.css" > 
+    <link rel="stylesheet" href="/css/custom.css">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <!-- FONTS -->
@@ -24,9 +25,38 @@
             <div class="container mx-auto">
                 <!-- text -->
                 <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
-                    <h1></h1>
-                </div>
-            </div>
+                    <h1 class="h1 custom-gradient mb-8">Instant Cash Offer for Your Home</h1>
+                    <p class="mb-8 text-first-onPrimary">Sell Fast, No Fees or Commissions. We Buy in Any Condition!</p>
+<form action="/submit" method="POST" class="flex flex-col lg:flex-row gap-4 min-w-[200px]">
+  
+  <!-- Property Address Input -->
+  <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
+    <div class="relative">
+    <label for="property-address" class="sr-only">Enter Property Address</label>
+    <i class="ri-home-line absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+    <input type="text" id="property-address" name="property_address" placeholder="Enter Property Address" class="btn btn-secondary" onfocus="this.previousElementSibling.style.display='none';" onblur="if(this.value===''){this.previousElementSibling.style.display='block';}">
+    </div>    
+  </div>
+  
+  <!-- Phone Input -->
+  <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
+    <div class="relative">
+    <label for="phone" class="sr-only">Phone</label>
+    <i class="ri-smartphone-line  absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+    <input type="text" id="phone" name="phone" placeholder="Phone" class="btn btn-secondary" onfocus="this.previousElementSibling.style.display='none';" onblur="if(this.value===''){this.previousElementSibling.style.display='block';}">
+    </div>
+  </div>
+  
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary inline-flex mx-auto xl:mx-0 items-center">
+    GET FREE OFFER
+    <i class="ri-arrow-right-line text-first-onPrimary"></i>
+  </button>
+  
+</form>
+
+        </div>
+        </div>
         </section>
 
 

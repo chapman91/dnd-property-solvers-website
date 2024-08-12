@@ -6,6 +6,9 @@
 **Subtitle**: Sell Fast, No Fees or Commissions. We Buy in Any Condition!
 **Description**: 
 "Sell Fast, No Fees or Commissions. We Buy in Any Condition!"
+Btn 1 Text: Enter Property Address
+Btn 2 Text: Phone 
+Btn 3 Text: GET YOUR OFFER
 
 
 
