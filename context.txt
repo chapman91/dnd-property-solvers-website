@@ -34,7 +34,7 @@ Btn 3 Text: GET YOUR OFFER
 ## 3. Services Section
 ----------------------------------------
 **Title**: SELL YOUR HOME IN THREE SIMPLE STEPS
-**Service 1 - SCHEDULE A CONSULTATION**: 
+**Service 1 - **: 
 "Schedule a free, no-obligation consultation to discuss your property and explore the best options available to you."
 
 **Service 2 - GET A FAIR OFFER**: 
