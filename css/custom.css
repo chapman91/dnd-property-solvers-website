@@ -1,14 +1,19 @@
 /* styles.css */
 /* styles that tailwind cannot support */
 .custom-gradient {
-    /* Apply the gradient as a background image */
-    background-image: linear-gradient(to right, #85D08F 17%, #85D08F 31%, #EFD59E 46%);
+  /* Apply the gradient as a background image */
+  background-image: linear-gradient(
+    to right,
+    #85d08f 17%,
+    #85d08f 31%,
+    #efd59e 46%
+  );
 
-    /* Clip the background to the next */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+  /* Clip the background to the next */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 .btn {
   white-space: nowrap;

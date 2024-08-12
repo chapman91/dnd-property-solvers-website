@@ -1,89 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DNDPROPERTY</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/output.css" > 
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-</head>
-<body class="bg-first-primaryLight">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-first-primaryLight">
+    <!-- header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full pt-2">
+        <!-- logo -->
+        <a href="#">
+          <img
+            src="/assets/logo.png"
+            alt="DND Property Logo"
+            class="h-10 wa-auto sm:h-12 md:h-14 lg:h-16 xl:h-20"
+          />
+        </a>
+        <!-- nav -->
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-second-secondary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- page wrapper -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
-        <h1 class="h1">DND Property Resolver</h1>
-        <!-- hero -->
-        <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
-            <div class="container mx-auto">
-                <!-- text -->
-                <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
-                    <h1 class="h1 custom-gradient mb-8">Instant Cash Offer for Your Home</h1>
-                    <p class="mb-8 text-first-onPrimary">Sell Fast, No Fees or Commissions. We Buy in Any Condition!</p>
-<form action="/submit" method="POST" class="flex flex-col lg:flex-row gap-4 min-w-[200px]">
-  
-  <!-- Property Address Input -->
-  <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
-    <div class="relative">
-    <label for="property-address" class="sr-only">Enter Property Address</label>
-    <i class="ri-home-line absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-    <input type="text" id="property-address" name="property_address" placeholder="Enter Property Address" class="btn btn-secondary" onfocus="this.previousElementSibling.style.display='none';" onblur="if(this.value===''){this.previousElementSibling.style.display='block';}">
-    </div>    
-  </div>
-  
-  <!-- Phone Input -->
-  <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
-    <div class="relative">
-    <label for="phone" class="sr-only">Phone</label>
-    <i class="ri-smartphone-line  absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-    <input type="text" id="phone" name="phone" placeholder="Phone" class="btn btn-secondary" onfocus="this.previousElementSibling.style.display='none';" onblur="if(this.value===''){this.previousElementSibling.style.display='block';}">
-    </div>
-  </div>
-  
-  <!-- Submit Button -->
-  <button type="submit" class="btn btn-primary inline-flex mx-auto xl:mx-0 items-center">
-    GET FREE OFFER
-    <i class="ri-arrow-right-line text-first-onPrimary"></i>
-  </button>
-  
-</form>
+      <!-- hero -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+      >
+        <div class="container mx-auto">
+          <!-- text -->
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1 class="h1 custom-gradient mb-8">
+              Instant Cash Offer for Your Home
+            </h1>
+            <p class="mb-8 text-first-onPrimary">
+              Sell Fast, No Fees or Commissions. We Buy in Any Condition!
+            </p>
+            <form
+              action="/submit"
+              method="POST"
+              class="flex flex-col lg:flex-row gap-4 min-w-[200px]"
+            >
+              <!-- Property Address Input -->
+              <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
+                <div class="relative">
+                  <label for="property-address" class="sr-only"
+                    >Enter Property Address</label
+                  >
+                  <i
+                    class="ri-home-line absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"
+                  ></i>
+                  <input
+                    type="text"
+                    id="property-address"
+                    name="property_address"
+                    placeholder="Enter Property Address"
+                    class="btn btn-secondary"
+                    onfocus="this.previousElementSibling.style.display='none';"
+                    onblur="if(this.value===''){this.previousElementSibling.style.display='block';}"
+                  />
+                </div>
+              </div>
 
+              <!-- Phone Input -->
+              <div class="mb-8 mx-auto xl:mx-0 inline-flex items-center">
+                <div class="relative">
+                  <label for="phone" class="sr-only">Phone</label>
+                  <i
+                    class="ri-smartphone-line absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"
+                  ></i>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    class="btn btn-secondary"
+                    onfocus="this.previousElementSibling.style.display='none';"
+                    onblur="if(this.value===''){this.previousElementSibling.style.display='block';}"
+                  />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-primary inline-flex mx-auto xl:mx-0 items-center"
+              >
+                GET FREE OFFER
+                <i class="ri-arrow-right-line text-first-onPrimary"></i>
+              </button>
+            </form>
+          </div>
         </div>
+      </section>
+
+      <!-- steps -->
+      <section class="steps">
+        <div class="container mx-auto">
+          <!-- grid items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <div>Step 1</div>
+            <div>Step 2</div>
+            <div>Step 3</div>
+          </div>
         </div>
-        </section>
+      </section>
 
 
-
-    <!-- Temporary div -->
-    <div class="h-[3000px]">Height</div>
+      <!-- Temporary div -->
+      <div class="h-[3000px]">Height</div>
     </main>
-
-
-
-
-
-
-
-
-
-
 
     <!-- scroll reveal js -->
     <script src="/js/scrollreveal.min.js"></script>
     <!-- swiper -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- main js -->
-    <script src="js/main.js" ></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
 
 <!-- 
     <div class="container mx-auto">
