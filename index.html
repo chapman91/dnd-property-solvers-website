@@ -110,7 +110,7 @@
                     id="phone"
                     name="phone"
                     placeholder="Phone"
-                    class="btn btn-secondary ring-gray-200 outline-none focus:ring-8 focus:ring-first-onPrimary  focus:text-second-secondary"
+                    class="btn btn-secondary ring-gray-200 outline-none focus:ring-8 focus:ring-first-onPrimary focus:text-second-secondary"
                     onfocus="this.previousElementSibling.style.display='none';"
                     onblur="if(this.value===''){this.previousElementSibling.style.display='block';}"
                   />
@@ -338,9 +338,11 @@
       </section>
 
       <!-- Contact Form -->
-      <section class="flex w-full mt-[80px] xl:mt-[200px] justify-center items-center">
+      <section
+        class="flex w-full mt-[80px] xl:mt-[200px] justify-center items-center"
+      >
         <div
-          class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-white  max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-second-secondary "
+          class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-white max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-second-secondary"
         >
           <!-- contact information -->
           <div class="flex flex-col space-y-8 justify-between">
@@ -414,6 +416,70 @@
           </div>
         </div>
       </section>
+
+      <!-- footer -->
+      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto px-0">
+          <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+            <div
+              class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+            >
+              <!-- logo -->
+              <a class="flex justify-center xl:justify-start mb-8" href="#">
+                <img
+                  src="/assets/logo.png"
+                  alt="DND Property Logo"
+                  class="h-10 wa-auto sm:h-12 md:h-14 lg:h-16 xl:h-20"
+                />
+                <p class="mb-8 text-xl">
+                  It is a long established fact that a reader will be distracted
+                  lookings
+                </p> </a
+              ><!-- socials -->
+              <ul
+                class="text-primary flex gap-[54px] justify-center xl:justify-start"
+              >
+                <li>
+                  <a href=""><i class="ri-facebook-box-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-x-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex-1 flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end bg-yellow-400"
+            >
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Pages</h3>
+                <ul>
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">Service</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">Faq</a>
+                  </li>
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!-- Temporary div -->
       <div class="h-[3000px]">Height</div>
