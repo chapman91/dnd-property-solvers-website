@@ -751,10 +751,6 @@ video {
   height: 3000px;
 }
 
-.h-\[640px\] {
-  height: 640px;
-}
-
 .h-\[90px\] {
   height: 90px;
 }
@@ -763,8 +759,8 @@ video {
   height: 100%;
 }
 
-.w-\[567px\] {
-  width: 567px;
+.min-h-\[640px\] {
+  min-height: 640px;
 }
 
 .w-full {
@@ -779,8 +775,8 @@ video {
   max-width: 42rem;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-\[1920px\] {
@@ -801,10 +797,6 @@ video {
 
 .max-w-md {
   max-width: 28rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
 }
 
 .flex-1 {
@@ -894,6 +886,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-lg {
@@ -1213,6 +1209,33 @@ h6 {
   padding: 1.5rem;
 }
 
+@layer utilties {
+  .nav {
+    position: relative;
+  }
+
+  .nav:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .nav::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    height: 3px;
+    width: 0%;
+    border-radius: 0.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(64 183 80 / var(--tw-bg-opacity));
+  }
+
+  .nav:hover::after {
+    width: 100%;
+  }
+}
+
 .focus\:text-second-secondary:focus {
   --tw-text-opacity: 1;
   color: rgb(14 14 14 / var(--tw-text-opacity));
@@ -1254,6 +1277,10 @@ h6 {
     width: 1000px;
   }
 
+  .md\:w-\[567px\] {
+    width: 567px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1292,12 +1319,24 @@ h6 {
     height: 100%;
   }
 
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:border-none {
@@ -1335,16 +1374,12 @@ h6 {
     margin-top: 200px;
   }
 
-  .xl\:mt-\[400px\] {
-    margin-top: 400px;
-  }
-
   .xl\:h-20 {
     height: 5rem;
   }
 
-  .xl\:h-\[840px\] {
-    height: 840px;
+  .xl\:min-h-\[840px\] {
+    min-height: 840px;
   }
 
   .xl\:max-w-none {

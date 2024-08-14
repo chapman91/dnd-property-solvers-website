@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DNDPROPERTY</title>
+    <title>DND Property Resolver</title>
     <!-- CSS -->
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="/css/custom.css" />
@@ -21,6 +21,11 @@
     />
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!--  SEO Optimization-->
+    <meta name="keywords" content="Real Estate, Home Offers, Fast Cash Home Sales">
+    <meta name="author" content="DND Property Solver">
+    <meta name="description" content="Get an instant cash offer for your home with no fees, commissions, or repairs. Sell your house fast, regardless of its condition. We make the process simple, transparent, and stress-free. Contact us today to get your free, no-obligation offer!" />
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body class="bg-first-primaryLight">
     <!-- header -->
@@ -44,12 +49,11 @@
             class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home" class="nav">Home</a></li>
+            <li><a href="#Service" class="nav">Services</a></li>
+            <li><a href="#FAQ" class="nav">FAQ</a></li>
+            <li><a href="#About" class="nav">About</a></li>
+            <li><a href="#Contact" class="nav">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -59,19 +63,21 @@
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
       <!-- hero -->
       <section
-        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+        class="hero min-h-[640px] xl:min-h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20" id="Home"
       >
         <div class="container mx-auto">
           <!-- text -->
           <div
-            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+            class="hero__text md:w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
           >
-            <h1 class="h1 custom-gradient mb-8">
+          <div>
+            <h1 class="h1 custom-gradient mb-8 break-words">
               Instant Cash Offer for Your Home
             </h1>
             <p class="mb-8 text-first-onPrimary">
               Sell Fast, No Fees or Commissions. We Buy in Any Condition!
             </p>
+          </div>
             <form
               action="/submit"
               method="POST"
@@ -131,7 +137,7 @@
       </section>
 
       <!-- steps -->
-      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20" id="Service">
         <div class="container mx-auto">
           <h2 class="h2 text-center mb-8">
             SELL YOUR HOME IN THREE SIMPLE STEPS
@@ -179,15 +185,15 @@
       </section>
 
       <!-- about -->
-      <section class="mt-[80px] xl:mt-[200px] relative z-20">
+      <section class="mt-[80px] xl:mt-[200px] relative z-20" id="About">
         <div class="container mx-auto xl:px-0">
           <!-- text -->
           <div
-            class="flex flex-col xl:flex-row text-center xl:text-left justify-between itmes-center gap-8 xl:gap-[74px]"
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between  lg:justify-center itmes-center gap-8 xl:gap-[74px]"
           >
             <!-- text -->
             <div
-              class="about__text flex-1 order-2 xl:order-none max-w-xl flex flex-col items-center xl:items-start gap-8"
+              class="about__text flex-1  order-2 xl:order-none lg:max-w-xl flex flex-col items-center xl:items-start  lg:items-center gap-8"
             >
               <h2 class="h2">Swift Property Sales Made Easy</h2>
               <p>
@@ -218,7 +224,7 @@
       </section>
 
       <!-- Accordion -->
-      <section class="accordion__section py-40 mt-[80px] xl:mt-[200px] relative z-20 max-w-ful">
+      <section class="accordion__section py-40 mt-[80px] xl:mt-[200px] relative z-20 max-w-ful" id="FAQ">
         <h2 class="accordion__title text-center h2 mb-10">Frequently Asked Question</h2>
 
         <!-- Accordion 1 -->
@@ -339,10 +345,10 @@
 
       <!-- Contact Form -->
       <section
-        class="flex w-full mt-[80px] xl:mt-[200px] justify-center items-center"
+        class="flex w-full mt-[80px] xl:mt-[200px] justify-center items-center" id="Contact"
       >
         <div
-          class="contact__form flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-white max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-second-secondary"
+          class="contact__form flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-white max-w-5xl p-8 sm:p-12 rounded-xl shadow-lg text-second-secondary"
         >
           <!-- contact information -->
           <div class="flex flex-col space-y-8 justify-between">
@@ -460,19 +466,19 @@
                 <h3 class="h3 mb-3">Pages</h3>
                 <ul class="flex flex-col">
                   <li>
-                    <a href="">Home</a>
+                    <a href="" class="nav">Home</a>
                   </li>
                   <li>
-                    <a href="">Service</a>
+                    <a href=""  class="nav">Service</a>
                   </li>
                   <li>
-                    <a href="">About Us</a>
+                    <a href=""  class="nav">About Us</a>
                   </li>
                   <li>
-                    <a href="">Faq</a>
+                    <a href=""  class="nav">Faq</a>
                   </li>
                   <li>
-                    <a href="">Contact Us</a>
+                    <a href=""  class="nav">Contact Us</a>
                   </li>
                 </ul>
               </div>

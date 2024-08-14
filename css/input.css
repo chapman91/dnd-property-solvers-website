@@ -50,6 +50,23 @@ h6 {
   @apply h-[350px] p-6;
 }
 
+@layer utilties {
+
+.nav {
+  @apply hover:text-lg relative;
+}
+
+.nav::after {
+  content: '';
+ @apply  bg-first-primary h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl  absolute;
+}
+
+.nav:hover::after {
+  @apply w-full;
+}
+}
+
+
 @layer components {
   .accordion-header {
     @apply py-4 px-6 cursor-pointer;
