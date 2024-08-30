@@ -1,6 +1,22 @@
+// Import the Algolia places package
+import places from 'places.js';
+
+
+// import mock process from npm
+import process from 'process';
+
+// Access environmental variables using process.env
+const appIdentity = process.env.APPLICATION_ID;
+const apiSearchKey = process.env.SEARCH_API_KEY;
+const writeApiKey = process.env.WRITE_API_KEY;
+
+
 const navTriggerBtn = document.querySelector('#nav_trigger_btn');
 const navMenu = document.querySelector('#nav_menu');
 const accordionHeader = document.querySelectorAll('.accordion-header');
+
+
+
 
 // event listener
 navTriggerBtn.addEventListener('click', () => {
@@ -61,3 +77,24 @@ sr.reveal('.accordion__title', { delay: 800 });
 
 // contact form
 sr.reveal('.contact__form', { delay: 800 });
+
+
+// Algolia form 
+(function() {
+  var placesAutoComplete = places({
+    appId: appIdentity,
+    apiKey: apiSearchKey,
+    container: document.querySelector('#property-address'),
+    templates: {
+      value: function(suggestion) {
+        return suggestion.name;
+      }
+    }, 
+  }).config ({
+    type: 'address',
+  });
+
+  placesAutoComplete.on('change', function resultSelected(e){
+    document.querySelector('#property-address').value = e.suggestion.administrative || ''
+  })
+}) ();
