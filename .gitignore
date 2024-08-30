@@ -1,2 +1,4 @@
 # .prettierrc
 # .context.js
+
+.env
