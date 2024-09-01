@@ -23,14 +23,13 @@ document.head.appendChild(script);
 
 function initMap() {
 
-// id of HTML input element where users will type their search queries
-var searchInput = 'property-address';
+
 
 // Executes only after the DOM is  fully loaded
 // Document Ready Function
 $(document).ready(function () {
     var autocomplete;
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById('property-address')), {
         // Filters the suggestions to only include places categorized as establishments (e.g., restaurant, hotels)
         types: ['establishment']
     });
