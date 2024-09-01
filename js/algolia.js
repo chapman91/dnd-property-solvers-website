@@ -1,4 +1,25 @@
 
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+const apiKey = import.meta.env.VITE_GOOGLE_MAP_KEY
+
+
+// API key in Google Maps script
+const script = document.createElement('script');
+// Template Literals
+script.src =  `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+script.async = true;
+script.defer = true;
+document.head.appendChild(script);
+
+})
+
+
+
+
+
 // id of HTML input element where users will type their search queries
 var searchInput = 'property-address';
 
