@@ -20,6 +20,9 @@ document.head.appendChild(script);
 
 
 
+
+function initMap() {
+
 // id of HTML input element where users will type their search queries
 var searchInput = 'property-address';
 
@@ -34,8 +37,10 @@ $(document).ready(function () {
 
     // Place Changed Event Listener
     // `google.maps` is a global object provided by the Google Maps JavaScript API
-    // google.maps.event.addListener(autocomplete, 'place_changed', function () {
-    //     var near_place = autocomplete.getPlace();
-    // });
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        var near_place = autocomplete.getPlace();
+        console.log(near_place);
+    });
 
 });
+}
