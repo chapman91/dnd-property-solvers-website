@@ -20,26 +20,32 @@ document.head.appendChild(script);
 
 
 
-
 function initMap() {
+    var searchInput = 'search_input';
 
+    // Executes only after the DOM is fully loaded
+    $(document).ready(function () {
+        // Ensure that the element exists before proceeding
+        var searchInputElement = document.querySelector('#' + searchInput);
 
+        // Log the selcted element to the console
+        console.log("Selected ELement using querySelector:". searchInputElement);
 
-// Executes only after the DOM is  fully loaded
-// Document Ready Function
-$(document).ready(function () {
-    var autocomplete;
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById('property-address')), {
-        // Filters the suggestions to only include places categorized as establishments (e.g., restaurant, hotels)
-        types: ['establishment']
+        if (searchInputElement) {
+            // Initialize autocomplete only if the element exists
+            var autocomplete = new google.maps.places.Autocomplete(searchInputElement, {
+                types: ['geocode'] // Filters to include only geocoded locations
+            });
+
+            // Place Changed Event Listener
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var near_place = autocomplete.getPlace();
+                console.log(near_place);
+            });
+        } else {
+            console.error("Element with ID '" + searchInput + "' not found.");
+        }
     });
-
-    // Place Changed Event Listener
-    // `google.maps` is a global object provided by the Google Maps JavaScript API
-    google.maps.event.addListener(autocomplete, 'place_changed', function () {
-        var near_place = autocomplete.getPlace();
-        console.log(near_place);
-    });
-
-});
 }
+
+

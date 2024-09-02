@@ -30,8 +30,10 @@
      <!-- jquery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
+   <!-- Google map js -->
+
       <!-- Google maps js -->
-    <script type="module" src="js/algolia.js"></script>
+    <script type="module" src="js/algolia.js" async defer></script>
 
   </head>
   <body class="bg-first-primaryLight">
@@ -101,7 +103,7 @@
                   ></i>
                   <input
                     type="text"
-                    id="property-address"
+                    id="search_input"
                     name="property_address"
                     placeholder="Enter Property Address"
                     class="btn btn-secondary ring-1 ring-gray-200 outline-none focus:ring-8 focus:ring-first-onPrimary focus:text-second-secondary"
