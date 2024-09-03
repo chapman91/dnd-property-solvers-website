@@ -1,6 +1,6 @@
 
 
-document.addEventListener('DOMContentLoaded', () => {
+function loadingGoogleAPI() {
 
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAP_KEY
@@ -14,11 +14,7 @@ script.async = true;
 script.defer = true;
 document.head.appendChild(script);
 
-})
-
-
-
-
+}
 
 function initMap() {
     var searchInput = 'search_input';
@@ -48,4 +44,9 @@ function initMap() {
     });
 }
 
+// Assign a function `loadingGoogleMapsAPI`, to the `onload` event of the `window` object in JavaScript
+// `window` object represents the browser window 
+// `onload` a browser event that triggers when the entire page and all its resoruces have fully loaded
+//  `=` is used to assign the `loadGoogleMapsAPI` function as the event handler for the `onload` event is triggered
 
+window.onload = loadGoogleMapsAPI;
