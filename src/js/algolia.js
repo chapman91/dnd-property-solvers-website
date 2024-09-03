@@ -12,7 +12,7 @@ const script = document.createElement('script');
 script.src =  `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initMap`;
 script.async = true;
 script.defer = true;
-script.type  = 'module'; 
+script.type  = "module"; 
 document.head.appendChild(script);
 
 }
