@@ -6,6 +6,11 @@ function loadingGoogleAPI() {
 const apiKey = import.meta.env.VITE_GOOGLE_MAP_KEY
 
 
+if (!apiKey) {
+    console.error('Google Maps API key is missing');
+    return;
+}
+
 // API key in Google Maps script
 const script = document.createElement('script');
 // Template Literals
