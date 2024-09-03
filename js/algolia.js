@@ -9,7 +9,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAP_KEY
 // API key in Google Maps script
 const script = document.createElement('script');
 // Template Literals
-script.src =  `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+script.src =  `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initMap`;
 script.async = true;
 script.defer = true;
 script.type  = 'module'; 
@@ -17,7 +17,7 @@ document.head.appendChild(script);
 
 }
 
-function initMap() {
+window.initMap = function() {
     var searchInput = 'search_input';
 
     // Executes only after the DOM is fully loaded
@@ -44,6 +44,8 @@ function initMap() {
         }
     });
 }
+
+
 
 // Assign a function `loadingGoogleMapsAPI`, to the `onload` event of the `window` object in JavaScript
 // `window` object represents the browser window 
