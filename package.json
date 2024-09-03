@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tailwind:build": "tailwindcss -i ./src/css/input.css -o ./dist/output.css",
-    "tailwind:watch": "tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+    "tailwind:build": "tailwindcss -i ./src/css/input.css -o ./src/css/tailwind-output.css",
+    "tailwind:watch": "tailwindcss -i ./src/css/input.css -o ./src/css/tailwind-output.css --watch"
   },
   "keywords": [],
   "author": "",
