@@ -49,4 +49,4 @@ function initMap() {
 // `onload` a browser event that triggers when the entire page and all its resoruces have fully loaded
 //  `=` is used to assign the `loadGoogleMapsAPI` function as the event handler for the `onload` event is triggered
 
-window.onload = loadGoogleMapsAPI;
+window.onload = loadingGoogleAPI;
